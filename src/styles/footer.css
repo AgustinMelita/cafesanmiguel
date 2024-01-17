@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&family=Quicksand:wght@300;400;500&display=swap');
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  background-color: #ffffff;
+  color: #fff;
+  padding: 20px;
+  border-top: 2px solid #f1a665;
+  max-width: 70vw; /* Ancho máximo del footer */
+  margin: 0 auto; /* Centra el footer horizontalmente */
+}
+
+.footer-column {
+  text-align: left;
+}
+
+.footer-column h4 {
+  font-family: 'Poiret One', sans-serif;
+  color: #f1a665;
+  font-size: 28px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.footer-column h5 {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 18px;
+  color: rgb(0, 0, 0);
+  font-weight: 400;
+}
+
+/* Ajustes para pantallas más pequeñas */
+@media (max-width: 1200px) {
+  .footer-container {
+    grid-template-columns: 1fr; /* Cambia a una sola columna en pantallas más pequeñas */
+    gap: 20px; /* Añade espacio entre elementos en pantallas más pequeñas */
+  }
+  
+  .footer-column {
+    text-align: center;
+  }
+}

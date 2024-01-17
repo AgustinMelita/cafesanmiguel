@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&family=Quicksand:wght@300;400;500&display=swap');
+
+.home-container {
+  width: 100vw;
+  overflow: hidden;
+}
+
+.home {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto; /* Añadido para centrar horizontalmente */
+  padding: 20px;
+  justify-content: center;
+  align-items: flex-start; /* Alineación al principio del eje vertical */
+  margin-bottom: 200px;
+  margin-top: 50px;
+}
+
+@media (max-width: 1200px) {
+  .home {
+    grid-template-columns: 1fr 1fr; /* Cambio a una columna en pantallas más pequeñas */
+    align-items: center; /* Alineación centrada en el eje vertical */
+  }
+}
+
+@media (max-width: 650px) {
+    .home {
+      grid-template-columns: 1fr; /* Cambio a una columna en pantallas más pequeñas */
+      align-items: center; /* Alineación centrada en el eje vertical */
+    }
+  }
+
+.about-us {
+    max-width: 800px; /* Ajusta el ancho según tu preferencia */
+    margin: 0 auto; /* Centra la columna horizontalmente */
+    text-align: center; /* Centra el texto dentro de la columna */
+    padding: 20px; /* Añade un espacio interno */
+  }
+  
+  .about-us h2 {
+    font-family: 'Poiret One', sans-serif;
+    color: #f1a665;
+    font-size: 58px;
+    font-weight: 500;
+    margin-top: 100px;
+    margin-bottom: 40px;
+  }
+
+  @media (max-width: 1200px) {
+    .about-us h2 {
+        font-size: 2.5rem;
+    }
+  }
+
+
+  
+  .about-us p {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 28px;
+    color: rgb(0, 0, 0);
+    font-weight: 300;
+  }
+  @media (max-width: 1200px) {
+    .about-us p{
+        font-size: 1.2rem;
+    }
+  }
+
+
+.home .column {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left; /* Centra el contenido dentro de cada columna */
+}
+
+.column img {
+  width: 100%; /* Ajusta el ancho de la imagen al 100% de la columna */
+  height: 200px; /* Mantiene la proporción de la imagen */
+  max-height: 228px; /* Establece una altura máxima para todas las imágenes */
+  border-radius: 20px;
+}
+
+.column h3 {
+  font-family: 'Poiret One', sans-serif;
+  color: #f1a665;
+  font-size: 28px;
+  font-weight: 500;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.column p {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 18px;
+  color: rgb(0, 0, 0);
+  background-color: transparent;
+  font-weight: 400;
+  text-wrap: pretty;
+}
+
+
