@@ -5,7 +5,7 @@ export const Menu = () =>{
 
     return(
 
-        <div>
+        <div className="Menu-main-container">
             
         </div>
     )
