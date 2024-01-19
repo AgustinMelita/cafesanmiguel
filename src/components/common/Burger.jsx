@@ -89,12 +89,12 @@ export const Burger = () => {
             </Link>
           </li>
           <li>
-            <Link to="/cafesanmiguel/menu/" onClick={handleNavigationWithScroll("/cafesanmiguel/menu")}>
+            <Link to="menu/" onClick={handleNavigationWithScroll("/cafesanmiguel/menu")}>
               Menú
             </Link>
           </li>
           <li>
-            <Link to="/cafesanmiguel/contacto/" onClick={handleNavigationWithScroll("/cafesanmiguel/contacto")}>
+            <Link to="contacto/" onClick={handleNavigationWithScroll("/cafesanmiguel/contacto")}>
               Contacto
             </Link>
           </li>
