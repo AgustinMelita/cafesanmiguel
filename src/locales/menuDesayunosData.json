@@ -1,0 +1,8 @@
+[
+    { "dish": "Café/Té con Medialunas", "price": 1800 },
+    { "dish": "Café/Té con Porción de Torta", "price": 2600 },
+    { "dish": "Jugo de Naranja Exprimido", "price": 1300 },
+    { "dish": "Desayuno 1: 2 Infusiones + 2 Porciones de torta + 2 facturas", "price": 4800 },
+    { "dish": "Desayuno 2: 2 infusiones + 2 Jugos de Naranja + 2 Sandwiches", "price": 6000 },
+    { "dish": "Brunch: 2 Infusiones + 2 jugos + 2 Porciones de Torta + 2 Sandwiches + 2 Facturas", "price": 9100 }
+]

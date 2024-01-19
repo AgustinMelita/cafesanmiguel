@@ -1,0 +1,12 @@
+[
+  { "dish": "Café Espresso", "price": 800 },
+  { "dish": "Café Americano", "price": 700 },
+  { "dish": "Café Cortado", "price": 750 },
+  { "dish": "Café con Leche", "price": 780 },
+  { "dish": "Café Latte", "price": 800 },
+  { "dish": "Café Mocha", "price": 850 },
+  { "dish": "Cappuccino", "price": 830 },
+  { "dish": "Macchiato", "price": 780 },
+  { "dish": "Café Irlandés", "price": 900 },
+  { "dish": "Café Viennese", "price": 860 }
+]

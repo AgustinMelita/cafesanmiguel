@@ -15,7 +15,7 @@ export const Footer = () =>{
             <div className="footer-column">
                 <h4>Horario de Atención</h4>
                 <h5>Lunes a Jueves: 8 am - 00 am</h5>
-                <h5>Viernes a Domingos:  am - 02 am</h5>
+                <h5>Viernes a Domingos:  8 am - 02 am</h5>
             </div>
             <div className="footer-column">
                 <h4>Redes Sociales</h4>

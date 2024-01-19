@@ -1,0 +1,12 @@
+[
+    { "dish": "Red Velvet", "price": 1300 },
+    { "dish": "Lemon Pie", "price": 1150 },
+    { "dish": "Carrot Cake", "price": 1150 },
+    { "dish": "Selva Negra", "price": 1200 },
+    { "dish": "Torta de Ricota", "price": 1000 },
+    { "dish": "Brownie", "price": 1050 },
+    { "dish": "Medialuna de Manteca", "price": 600 },
+    { "dish": "Croissant", "price": 950 },
+    { "dish": "Cañoncito de Dulce de Leche", "price": 750 },
+    { "dish": "Vigilante", "price": 750 }
+]

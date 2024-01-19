@@ -1,0 +1,10 @@
+[
+    { "dish": "Tostado de Jamón y Queso", "price": 1050 },
+    { "dish": "Sándwich Árabe de Jamón y Queso", "price": 1250 },
+    { "dish": "Sándwich Bagel", "price": 1250 },
+    { "dish": "Medialuna de Jamón y Queso", "price": 900 },
+    { "dish": "Croissant de Jamón y Tomates Confitados", "price": 1200 },
+    { "dish": "Sándwich Vegetariano", "price": 1100 },
+    { "dish": "Bruschetta de Tomate y Albahaca", "price": 1300 },
+    { "dish": "Avocado Toast", "price": 1200 }
+]

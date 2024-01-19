@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&family=Quicksand:wght@300;400;500&display=swap');
+
+.div-cont{
+  background-color: rgb(21, 21, 21);
+  height: 100vh;
+}
+
+.letter-main-container{
+  padding: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 100vw;
+}
+
+.letter-container {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    width: 80%; 
+    height: 80vh;
+    max-width: 800px; 
+    border: 2px solid #f1a665;
+    background-color: rgb(21, 21, 21);
+    margin-top: 80px;
+  }
+  
+  .letter-content {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+  }
+  
+  .letter-row {
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: #f1a665 solid 1px;
+  }
+  
+/* Color para la clase letter-container */
+.letter-container h1 {
+    font-family: 'Poiret One', sans-serif;
+    color: #f1a665;
+    font-size: 3rem;
+    margin-bottom: 10px;
+    font-weight: 200;
+}
+
+.letter-container h2 {
+    font-family: 'Poiret One', sans-serif;
+    font-size: 1.8rem;
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+
+/* Color para la clase letter-content */
+.letter-content h3 {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.1rem;
+    color: #ffffff;
+    background-color: transparent;
+    font-weight: 400;
+    text-align: left;
+}
+
+.letter-content p {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.1rem;
+    color: #f1a665;
+    background-color: transparent;
+    font-weight: 400;
+}
+
+/* Media query para pantallas pequeñas */
+@media only screen and (max-width: 768px) {
+  .letter-container {
+    width: 80%; /* Ajusta según tus preferencias en pantallas pequeñas */
+  }
+
+  .letter-column {
+    margin-right: 0;
+    flex: 1 0 100%;
+  }
+}
+
