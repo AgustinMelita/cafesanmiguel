@@ -4,10 +4,10 @@ import { Link, useNavigate } from "react-router-dom";
 
 export const Burger = () => {
   const [isChecked, setIsChecked] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const navigate = useNavigate();
 
   useEffect(() => {
-    // Detectar si es un dispositivo táctil
     const isTouchDevice = ('ontouchstart' in window) || (navigator.msMaxTouchPoints > 0);
 
     if (isTouchDevice) {
@@ -22,11 +22,16 @@ export const Burger = () => {
   }, []);
 
   const handleTouchStart = (event) => {
-    // Cerrar el menú si se toca fuera de él
     const burgerMenu = document.querySelector(".burger-menu");
     if (burgerMenu && !burgerMenu.contains(event.target)) {
       setIsChecked(false);
+      setIsMenuOpen(false);
     }
+  };
+
+  const toggleMenu = () => {
+    setIsChecked(!isChecked);
+    setIsMenuOpen(!isMenuOpen);
   };
 
   const scrollToSection = (sectionId) => {
@@ -40,19 +45,30 @@ export const Burger = () => {
   const handleNavigationWithScroll = (path, sectionId) => (event) => {
     event.preventDefault();
 
-    // Desactivar el checkbox después de hacer clic para cerrar el menú
-    setIsChecked(false);
-
-    // Hacer scroll al ID correspondiente
     scrollToSection(sectionId);
 
-    // Navegar a la ruta especificada
-    navigate(path);
+    const handleScrollEnd = () => {
+      setIsChecked(false);
+      setIsMenuOpen(false);
+      window.removeEventListener('scroll', handleScrollEnd);
+    };
+
+    window.addEventListener('scroll', handleScrollEnd);
+
+    // Condición para recargar la página solo cuando sea necesario
+    if (path === "/cafesanmiguel/") {
+      navigate(path);
+    } else {
+      navigate(path);
+
+      // Recargar la página después de navegar
+      window.location.reload();
+    }
   };
 
   return (
-    <div className="burger-menu">
-      <input type="checkbox" id="burger" checked={isChecked} onChange={() => setIsChecked(!isChecked)} />
+    <div className={`burger-menu ${isMenuOpen ? 'open' : ''}`}>
+      <input type="checkbox" id="burger" checked={isChecked} onChange={toggleMenu} />
       <label className="burger" htmlFor="burger">
         <span></span>
         <span></span>
