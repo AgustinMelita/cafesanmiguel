@@ -40,11 +40,11 @@ export const Burger = () => {
   const handleNavigationWithScroll = (path, sectionId) => (event) => {
     event.preventDefault();
 
+    // Desactivar el checkbox después de hacer clic para cerrar el menú
+    setIsChecked(false);
+
     // Hacer scroll al ID correspondiente
     scrollToSection(sectionId);
-
-    // Desactivar el checkbox después de hacer clic
-    setIsChecked(false);
 
     // Navegar a la ruta especificada
     navigate(path);
