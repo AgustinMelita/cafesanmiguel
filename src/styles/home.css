@@ -10,33 +10,33 @@
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
   max-width: 1200px;
-  margin: 0 auto; /* Añadido para centrar horizontalmente */
+  margin: 0 auto; 
   padding: 20px;
   justify-content: center;
-  align-items: flex-start; /* Alineación al principio del eje vertical */
+  align-items: flex-start; 
   margin-bottom: 200px;
   margin-top: 50px;
 }
 
 @media (max-width: 1200px) {
   .home {
-    grid-template-columns: 1fr 1fr; /* Cambio a una columna en pantallas más pequeñas */
-    align-items: center; /* Alineación centrada en el eje vertical */
+    grid-template-columns: 1fr 1fr; 
+    align-items: center; 
   }
 }
 
 @media (max-width: 650px) {
     .home {
-      grid-template-columns: 1fr; /* Cambio a una columna en pantallas más pequeñas */
-      align-items: center; /* Alineación centrada en el eje vertical */
+      grid-template-columns: 1fr; 
+      align-items: center; 
     }
   }
 
 .about-us {
-    max-width: 800px; /* Ajusta el ancho según tu preferencia */
-    margin: 0 auto; /* Centra la columna horizontalmente */
-    text-align: center; /* Centra el texto dentro de la columna */
-    padding: 20px; /* Añade un espacio interno */
+    max-width: 800px; 
+    margin: 0 auto; 
+    text-align: center; 
+    padding: 20px; 
   }
   
   .about-us h2 {
@@ -75,13 +75,13 @@
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  text-align: left; /* Centra el contenido dentro de cada columna */
+  text-align: left; 
 }
 
 .column img {
-  width: 100%; /* Ajusta el ancho de la imagen al 100% de la columna */
-  height: 200px; /* Mantiene la proporción de la imagen */
-  max-height: 228px; /* Establece una altura máxima para todas las imágenes */
+  width: 100%; 
+  height: 200px; 
+  max-height: 228px; 
   border-radius: 20px;
 }
 

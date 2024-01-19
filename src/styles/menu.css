@@ -43,7 +43,7 @@
     border-bottom: #f1a665 solid 1px;
   }
   
-/* Color para la clase letter-container */
+
 .letter-container h1 {
     font-family: 'Poiret One', sans-serif;
     color: #f1a665;
@@ -60,7 +60,7 @@
     margin-bottom: 40px;
 }
 
-/* Color para la clase letter-content */
+
 .letter-content h3 {
     font-family: 'Quicksand', sans-serif;
     font-size: 1.1rem;
@@ -78,10 +78,9 @@
     font-weight: 400;
 }
 
-/* Media query para pantallas pequeñas */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1200px) {
   .letter-container {
-    width: 80%; /* Ajusta según tus preferencias en pantallas pequeñas */
+    width: 80%; 
   }
 
   .letter-column {

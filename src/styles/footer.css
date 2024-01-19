@@ -7,8 +7,8 @@
   color: #fff;
   padding: 20px;
   border-top: 2px solid #f1a665;
-  max-width: 70vw; /* Ancho máximo del footer */
-  margin: 0 auto; /* Centra el footer horizontalmente */
+  max-width: 70vw; 
+  margin: 0 auto; 
 }
 
 .footer-column {
@@ -30,11 +30,11 @@
   font-weight: 400;
 }
 
-/* Ajustes para pantallas más pequeñas */
+
 @media (max-width: 1200px) {
   .footer-container {
-    grid-template-columns: 1fr; /* Cambia a una sola columna en pantallas más pequeñas */
-    gap: 20px; /* Añade espacio entre elementos en pantallas más pequeñas */
+    grid-template-columns: 1fr; 
+    gap: 20px; 
   }
   
   .footer-column {
