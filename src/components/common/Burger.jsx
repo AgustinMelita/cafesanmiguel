@@ -55,15 +55,8 @@ export const Burger = () => {
 
     window.addEventListener('scroll', handleScrollEnd);
 
-    // Condición para recargar la página solo cuando sea necesario
-    if (path === "/cafesanmiguel/") {
-      navigate(path);
-    } else {
-      navigate(path);
-
-      // Recargar la página después de navegar
-      window.location.reload();
-    }
+    // Eliminar recarga de página innecesaria
+    navigate(path);
   };
 
   return (
@@ -79,22 +72,22 @@ export const Burger = () => {
       <div className="menu-content">
         <ul>
           <li>
-            <Link to="/cafesanmiguel/" onClick={handleNavigationWithScroll("/cafesanmiguel/", "background")}>
+            <Link to="cafesanmiguel/" onClick={handleNavigationWithScroll("cafesanmiguel/", "background")}>
               Inicio
             </Link>
           </li>
           <li>
-            <Link to="/cafesanmiguel/" onClick={handleNavigationWithScroll("/cafesanmiguel/", "about-us")}>
+            <Link to="cafesanmiguel/" onClick={handleNavigationWithScroll("cafesanmiguel/", "about-us")}>
               Nosotros
             </Link>
           </li>
           <li>
-            <Link to="menu/" onClick={handleNavigationWithScroll("/cafesanmiguel/menu")}>
+            <Link to="cafesanmiguel/menu" onClick={handleNavigationWithScroll("cafesanmiguel/menu")}>
               Menú
             </Link>
           </li>
           <li>
-            <Link to="contacto/" onClick={handleNavigationWithScroll("/cafesanmiguel/contacto")}>
+            <Link to="cafesanmiguel/contacto" onClick={handleNavigationWithScroll("cafesanmiguel/contacto")}>
               Contacto
             </Link>
           </li>
