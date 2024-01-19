@@ -9,7 +9,7 @@
     top: 0;
     display: flex;
     align-items: center ;
-    height: 100%;
+    height: 130vh;
     width: 100vw;
     flex-direction: column;
     background-color: rgb(21, 21, 21);
@@ -79,6 +79,7 @@
   @media only screen and (max-width: 1200px) {
     .reserv-container{
     text-align: center;
+    height: 100vh;
     }
 
     .res-container{
@@ -100,6 +101,6 @@
         font-size: 1.8rem;
     }
     .map-container img{
-    max-width: 70vw; 
+    max-width: 400px; 
     }
   }
