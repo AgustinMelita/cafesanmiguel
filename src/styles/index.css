@@ -2,4 +2,5 @@
   margin: 0;
   width: 100wv;
   height: 100wv;
+  overscroll-behavior-y: none;
 }

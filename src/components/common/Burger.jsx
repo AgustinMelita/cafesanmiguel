@@ -1,10 +1,33 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "../../styles/burger.css";
 import { Link, useNavigate } from "react-router-dom";
 
 export const Burger = () => {
   const [isChecked, setIsChecked] = useState(false);
   const navigate = useNavigate();
+
+  useEffect(() => {
+    // Detectar si es un dispositivo táctil
+    const isTouchDevice = ('ontouchstart' in window) || (navigator.msMaxTouchPoints > 0);
+
+    if (isTouchDevice) {
+      document.addEventListener('touchstart', handleTouchStart, false);
+    }
+
+    return () => {
+      if (isTouchDevice) {
+        document.removeEventListener('touchstart', handleTouchStart, false);
+      }
+    };
+  }, []);
+
+  const handleTouchStart = (event) => {
+    // Cerrar el menú si se toca fuera de él
+    const burgerMenu = document.querySelector(".burger-menu");
+    if (burgerMenu && !burgerMenu.contains(event.target)) {
+      setIsChecked(false);
+    }
+  };
 
   const scrollToSection = (sectionId) => {
     const section = document.getElementById(sectionId);
@@ -50,12 +73,12 @@ export const Burger = () => {
             </Link>
           </li>
           <li>
-          <Link to="/cafesanmiguel/menu/" onClick={handleNavigationWithScroll("/cafesanmiguel/menu")}>
+            <Link to="/cafesanmiguel/menu/" onClick={handleNavigationWithScroll("/cafesanmiguel/menu")}>
               Menú
             </Link>
           </li>
           <li>
-          <Link to="/cafesanmiguel/contacto/" onClick={handleNavigationWithScroll("/cafesanmiguel/contacto")}>
+            <Link to="/cafesanmiguel/contacto/" onClick={handleNavigationWithScroll("/cafesanmiguel/contacto")}>
               Contacto
             </Link>
           </li>

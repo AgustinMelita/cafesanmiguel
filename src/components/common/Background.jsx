@@ -19,7 +19,7 @@ function Background() {
   return (
     <div className="background-container">
       <div
-        className="background" id="background"
+        className="background" id="background" loading="lazy"
         style={{
           backgroundPositionY: `${scrollPosition / 2}px`, // Ajusta la velocidad del efecto parallax cambiando el divisor
         }}
