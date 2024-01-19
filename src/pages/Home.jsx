@@ -6,6 +6,7 @@ import cafe2 from "../assets/cafe2.jpg"
 import cafe3 from "../assets/cafe3.jpg"
 import { Footer } from "../components/common/Footer"
 
+
 export const Home = () => {
   return (
     <div className="home-container">
@@ -13,7 +14,7 @@ export const Home = () => {
       
       <div className="about-us" id="about-us">
           <h2>Café San Miguel</h2>
-          <p>"Enclavado en el corazón de la vibrante localidad de San Miguel en Buenos Aires, el Café San Miguel se erige como un símbolo de tradición y pasión por el café. Fundado con la visión de crear un espacio acogedor donde los amantes del café pudieran deleitarse con experiencias únicas, San Miguel ha evolucionado para convertirse en un punto de encuentro querido en la comunidad. Desde sus inicios humildes hasta su posición actual, el café lleva consigo la esencia y la calidez de San Miguel, ofreciendo no solo exquisitas bebidas, sino también un refugio acogedor para todos aquellos que buscan momentos de conexión y disfrute en un entorno único."</p>
+          <p>Enclavado en el corazón de la vibrante localidad de San Miguel en Buenos Aires, el Café San Miguel se erige como un símbolo de tradición y pasión por el café. Fundado con la visión de crear un espacio acogedor donde los amantes del café pudieran deleitarse con experiencias únicas, San Miguel ha evolucionado para convertirse en un punto de encuentro querido en la comunidad. Desde sus inicios humildes hasta su posición actual, el café lleva consigo la esencia y la calidez de San Miguel, ofreciendo no solo exquisitas bebidas, sino también un refugio acogedor para todos aquellos que buscan momentos de conexión y disfrute en un entorno único.</p>
         </div>
       <section className="home">
         <div className="column">
