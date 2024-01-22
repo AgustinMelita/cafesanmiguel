@@ -4,6 +4,7 @@ import { Link, useNavigate } from "react-router-dom";
 
 export const Burger = () => {
   const [isChecked, setIsChecked] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const navigate = useNavigate();
 
   const scrollToSection = (sectionId) => {
@@ -23,14 +24,22 @@ export const Burger = () => {
     // Desactivar el checkbox después de hacer clic
     setIsChecked(false);
 
+    // Cerrar el menú
+    setIsMenuOpen(false);
+
     // Navegar a la ruta especificada
     navigate(path);
   };
 
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+    setIsChecked(!isChecked);
+  };
+
   return (
-    <div className="burger-menu">
-      <input type="checkbox" id="burger" checked={isChecked} onChange={() => setIsChecked(!isChecked)} />
-      <label className="burger" htmlFor="burger">
+    <div className={`burger-menu ${isMenuOpen ? 'is-menu-open' : ''}`}>
+      <input type="checkbox" id="burger" checked={isChecked} onChange={() => {}} />
+      <label className="burger" htmlFor="burger" onClick={toggleMenu}>
         <span></span>
         <span></span>
         <span></span>
@@ -45,7 +54,7 @@ export const Burger = () => {
             </Link>
           </li>
           <li>
-          <Link to="/cafesanmiguel/menu/" onClick={handleNavigationWithScroll("/cafesanmiguel/menu")}>
+            <Link to="/cafesanmiguel/menu/" onClick={handleNavigationWithScroll("/cafesanmiguel/menu")}>
               Menú
             </Link>
           </li>
@@ -55,7 +64,7 @@ export const Burger = () => {
             </Link>
           </li>
           <li>
-          <Link to="/cafesanmiguel/contacto" onClick={handleNavigationWithScroll("/cafesanmiguel/contacto")}>
+            <Link to="/cafesanmiguel/contacto" onClick={handleNavigationWithScroll("/cafesanmiguel/contacto")}>
               Contacto
             </Link>
           </li>
